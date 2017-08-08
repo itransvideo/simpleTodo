@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lxywk.simpletodo.MainActivity">
+
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add item"
+        android:onClick="onAddItem"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="314dp"
+        android:layout_height="375dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="16dp" />
+</RelativeLayout>
